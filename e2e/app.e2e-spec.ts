@@ -7,8 +7,8 @@ describe('insight App', () => {
     page = new InsightPage();
   });
 
-  it('should display message saying app works', () => {
+  it('should display message saying the name of the app', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Insight - RSS Reader');
   });
 });
